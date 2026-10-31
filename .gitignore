@@ -23,3 +23,6 @@ edwards/
 spikes/out/*
 !spikes/out/.gitkeep
 *.log
+
+# public sample model, used by docs/make_screenshots.py
+!OSTCXBEAC1E--3DModel-STEP-510211.STEP
