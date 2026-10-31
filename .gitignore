@@ -20,5 +20,6 @@ __pycache__/
 edwards/
 
 # generated output and logs
-spikes/out/
+spikes/out/*
+!spikes/out/.gitkeep
 *.log
