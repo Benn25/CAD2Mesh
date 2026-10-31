@@ -1,0 +1,24 @@
+# environment and caches
+.venv/
+.cache/
+__pycache__/
+*.pyc
+
+# CAD models and meshes -- customer data, never in a public repo
+*.step
+*.STEP
+*.stp
+*.STP
+*.stl
+*.obj
+*.mtl
+*.fbx
+*.usd
+*.usda
+*.usdc
+*.dioptra
+edwards/
+
+# generated output and logs
+spikes/out/
+*.log

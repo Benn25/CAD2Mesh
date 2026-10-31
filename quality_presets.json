@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Draft",
+    "deflection": 1.0,
+    "angle": 30.0,
+    "quads": true,
+    "grid": true,
+    "iso": false,
+    "color": [
+      0.78,
+      0.45,
+      0.36
+    ],
+    "align": false
+  },
+  {
+    "name": "Standard",
+    "deflection": 0.2,
+    "angle": 20.0,
+    "quads": true,
+    "grid": true,
+    "iso": false,
+    "color": [
+      0.45,
+      0.6,
+      0.75
+    ],
+    "align": false
+  },
+  {
+    "name": "Fine",
+    "deflection": 0.05,
+    "angle": 10.0,
+    "quads": true,
+    "grid": true,
+    "iso": false,
+    "color": [
+      0.47,
+      0.7,
+      0.52
+    ],
+    "align": false
+  },
+  {
+    "name": "Ultra",
+    "deflection": 0.015,
+    "angle": 5.0,
+    "quads": true,
+    "grid": true,
+    "iso": false,
+    "color": [
+      0.66,
+      0.53,
+      0.76
+    ],
+    "align": false
+  },
+  {
+    "name": "no axis keeping",
+    "deflection": 0.1,
+    "angle": 15.0,
+    "quads": true,
+    "grid": false,
+    "iso": false,
+    "color": [
+      0.6784313917160034,
+      0.6431372761726379,
+      0.45098039507865906
+    ],
+    "align": false
+  }
+]
