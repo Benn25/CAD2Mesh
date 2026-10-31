@@ -3116,7 +3116,7 @@ class MainWindow(QMainWindow):
             self.tree.scrollToItem(it)
         self._selection_changed()
 
-    def _mesh_of(self, occ_path, bi):
+    def _mesh_at_path(self, occ_path, bi):
         occ = self._occ_by_path.get(occ_path)
         ms = self.meshes.get(occ.proto_key, []) if occ else []
         return ms[bi] if 0 <= bi < len(ms) else None
@@ -3156,7 +3156,7 @@ class MainWindow(QMainWindow):
         leaks = sum(1 for ms in self.meshes.values() for m in ms if not m.watertight)
         if only is not None:
             leaks = sum(1 for (op, bi) in only
-                        for m in [self._mesh_of(op, bi)]
+                        for m in [self._mesh_at_path(op, bi)]
                         if m is not None and not m.watertight)
         note = ("\n\nNote: some bodies are NOT watertight -- see the Result panel."
                 if leaks else "")

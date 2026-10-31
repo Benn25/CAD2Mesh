@@ -2382,6 +2382,14 @@ that keep the same bodies still share one -- instancing survives. Body prims
 keep their ORIGINAL numbers (`Body_2` stays `Body_2`), so names do not shift
 between a full and a partial export.
 
+**It shipped with a shadowing bug, the same trap as `_body_sizes`.** Its
+helper was first named `_mesh_of(occ_path, bi)`, and `MainWindow` already HAD
+a `_mesh_of(proto_key, bi)` with six callers. Python keeps the later
+definition, so every one of them was quietly looking a proto key up as an
+occurrence path and getting None: the "By surface type" mode drew every face
+grey, with no error. Found while making the README screenshots. Now
+`_mesh_at_path`. Before adding a method to MainWindow, grep for the name.
+
 **Namesakes share a selection key.** Keys are path-based and paths come from
 names, so copies with the same name under the same parent have the same key:
 on the handle, 102 of 230 occurrences share a path with another (33 groups,
